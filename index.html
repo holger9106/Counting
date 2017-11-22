@@ -76,8 +76,8 @@
             <h2>Gracias a Counting podràs conocer:</h2>
             <p>Promedio de ventas diarias de tu negocio.</p>
             <p>Monto vendido y ganacias obtenidas durante el dìa, mes, trimetre, etc.</p>
-            <p>Invetrsiòn total de tu inventario.</p>
-            <p>Productos que estan cercanos a vencerse y/o acabarse.</p>
+            <p>Inversiòn total de tu inventario.</p>
+            <p>Productos que estàn cercanos a vencerse y/o acabarse.</p>
             <p>Productos con màs demanda.</p>
             <p>Productos que no se estàn vendiendo con frecuencia.</p>
             <p>Y mucho màs!!</p>
@@ -104,26 +104,25 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contàctanos:</h2>
-            <p>Estaremos a la espera en nuestras plataformas y redes sociales!
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">
-                Counting.</a>
+            <p>Estaremos a la espera en nuestras plataformas para ayudarte a controlar y hacer crecer tu negocio.
             </p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
+                <a href="" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
                   <span class="network-name">+505 87339704</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
+                <a href="https://acaprof.net/edu/" target="_blank" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">ACAPROF</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
+                <a href="https://facebook.com"
+                   target="_blank" class="btn btn-default btn-lg">
+                  <i class="fa fa-facebook fa-fw"></i>
                   <span class="network-name">Facebook</span>
                 </a>
               </li>
@@ -150,8 +149,24 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <script>
+      function initMap() {
+        //leon 12.434140, -86.874956
+        //Ocotal 13.637956, -86.475089
+        var site = {lat: 13.637956, lng: -86.475089};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: site,
+          disableDefaultUI: true
+        });
+        /*var marker = new google.maps.Marker({
+          position: site,
+          map: map
+        });*/
+      }
+    </script>
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwRvuKC8SAdcjvBooew9p531DM_BIhb6Y&callback=initMap"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
